@@ -26,8 +26,12 @@ const routes = [
             },
             {
                 path: '/plannerz/group',
-                component: () => import('../components/Group/GroupMenu.vue')
+                component: () => import('../components/Group/GroupMenu.vue'),
             },
+            {
+                path: '/plannerz/group/new',
+                component: () => import('../components/Group/CreateGroup.vue')
+            }
         ]
     },
     // {

@@ -1,13 +1,11 @@
 <template>
-    <div>
-        GROUP
-    </div>
+    <!-- <p>{{ roomList }}</p> -->
+    <GroupRoom v-for="(room, i) in roomList" v-bind:key="i" v-bind:roomData="roomList[i]"></GroupRoom>
 </template>
 
 <script>
 import GroupRoom from './GroupRoom.vue'
 
-// 컴포넌트 불러오기
 export default {
     name: 'GroupMenu',
     components: {
@@ -18,9 +16,13 @@ export default {
             roomList: []
         }
     },
+    created() {
+        this.getRoomList()
+    },
     methods: {
-        getRoomList() {
-
+        //톡방 데이터 불러오기
+        async getRoomList() {
+            this.roomList = await this.$api('http://localhost:8000/api/studygroup', 'get')
         }
     }
 }

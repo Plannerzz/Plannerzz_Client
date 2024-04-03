@@ -1,6 +1,8 @@
 <template>
     <div>
-        <h2> {{ roomname }} </h2>
+        <h2 v-on:click="showDetail">
+            {{ roomData.roomname }}
+        </h2>
     </div>
 </template>
 
@@ -8,7 +10,13 @@
 export default {
     name: 'GroupRoom',
     props: {
-        roomname: String
+        roomData: Object
+    },
+    methods: {
+        showDetail() {
+            console.log(this.roomData.id)
+
+        }
     }
 }
 </script>
