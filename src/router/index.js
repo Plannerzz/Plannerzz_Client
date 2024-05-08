@@ -21,7 +21,7 @@ const routes = [
         component: () => import('../views/MainView.vue'),
         children: [
             {
-                path: '',
+                path: '/plannerz/home',
                 component: () => import('../components/Home/HomeMenu.vue')
             },
             {
@@ -31,6 +31,12 @@ const routes = [
             {
                 path: '/plannerz/group/new',
                 component: () => import('../components/Group/CreateGroup.vue')
+            },
+            {
+                name: 'groupchat',
+                path: '/plannerz/group/chat/:id',
+                component: () => import('../components/Group/ChatRoom.vue'),
+                props: true
             }
         ]
     },

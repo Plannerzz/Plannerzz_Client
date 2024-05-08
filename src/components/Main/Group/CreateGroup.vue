@@ -17,6 +17,8 @@ import axios from 'axios';
 import { useRouter } from 'vue-router';
 const router = useRouter()
 
+let today = new Date()
+
 export default {
     name: 'CreateGroup',
     data: () => {
@@ -26,8 +28,8 @@ export default {
                 roomname: '',
                 comment: '',
                 numLimit: 2,
-                startTime: '14:00',
-                endTime: '16:00',
+                startTime: today.getHours() + ':' + today.getMinutes(),
+                endTime: (today.getHours() + 2) + ':' + today.getMinutes(),
             }
         }
     },
@@ -56,7 +58,6 @@ export default {
             axios.post('http://localhost:8000/api/studygroup', this.roomData)
                 .then((req, res) => {
                     alert('그룹 생성이 완료되었습니다!')
-
                     //생성된 그룹 화면으로 이동 (지금은 임시로 메인 화면으로 이동)
                     router.push('/plannerz/group')
                 })

@@ -1,8 +1,9 @@
 <template>
     <div>
-        <h2 v-on:click="showDetail">
+        <h2>
             {{ roomData.roomname }}
         </h2>
+        <button v-on:click="enterChatRoom()">채팅 입장</button>
     </div>
 </template>
 
@@ -13,9 +14,10 @@ export default {
         roomData: Object
     },
     methods: {
-        showDetail() {
-            console.log(this.roomData.id)
-
+        // 선택한 그룹의 채팅방으로 이동
+        enterChatRoom() {
+            // console.log(roomData)
+            this.$router.push({ name: 'groupchat', params: { id: this.roomData.id } })
         }
     }
 }

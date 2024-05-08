@@ -1,14 +1,40 @@
 /* 공통 레이아웃 관리 */
 @font-face {
     font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
     font-style: normal;
 }
 
 *{margin: 0; padding:0; font-family: 'Pretendard';}
 ul, li, ol{list-style: none;}
 a{text-decoration: none; color:unset}
+button{cursor:pointer}
+.clearfix::after{display:block; content:''; clear:both;}
 
 .page-wrap{position:relative; height:100vh; overflow:hidden; max-width: 400px; width: 100%; margin: 0 auto;}
 
@@ -18,7 +44,7 @@ a{text-decoration: none; color:unset}
 
 .container{padding:20px 24px;}
 
-.nav{position:absolute; bottom:0; width:100%; display:flex; flex-wrap:wrap; box-shadow: 0px -5px 20px rgba(0,0,0,.1); padding:0 24px; box-sizing:border-box; padding:20px 0; left:50%; transform:translateX(-50%);}
+.nav{position:absolute; bottom:0; width:100%; display:flex; flex-wrap:wrap; box-shadow: 0px -5px 20px rgba(0,0,0,.1); padding:0 24px; box-sizing:border-box; padding:20px 0; left:50%; transform:translateX(-50%); background:#fff;}
 .nav > a{width:20%; text-align: center;}
 .nav > a i{display:block; width:24px; height:24px; margin:0 auto 4px auto;}
 .nav > a i.active{display:none}
@@ -37,3 +63,17 @@ a{text-decoration: none; color:unset}
 .filtab ul{width:max-content;}
 .filtab li{padding:8px 16px; border-radius: 20px; display:inline-block; background:#EBEBEB; color:#7B7B7B; cursor:pointer;}
 .filtab li.on{color:#fff; background:#5f2cf1}
+
+/* 팝업 css*/
+#popup{display:block; content:''; width:100%; height:100vh; background:rgba(0,0,0,.3); position:absolute; z-index:1; left:0; top:0;}
+#popup .popwrap{border-radius: 20px; background:#fff; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:286px;}
+#popup .modal-header{position:relative; padding:20px;}
+#popup .modal-header .title{width:calc(100% - 24px); float:left;}
+#popup .modal-header .closeBtn{width:24px; height:24px; display:block; background:url(/img/ico_close.svg) no-repeat center; float:right;}
+#popup .modal-body{padding:8px; text-align:center;}
+#popup .modal-body p{line-height:1.5;}
+#popup .modal-footer{padding:8px;}
+#popup .modal-footer button{border:0; font-size:16px; color:#fff; border-radius:10px; width:calc(49% - 4px); padding:16px 0; margin-right:8px}
+#popup .modal-footer button:last-child{margin-right:0;}
+#popup .purpleBtn{background:#5F2CF1}
+#popup .orangeBtn{background:#FFBB37;}
