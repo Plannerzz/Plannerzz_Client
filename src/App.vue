@@ -1,7 +1,7 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <router-view />
+  <router-view :key="$route.fullPath" />
 </template>
 
 <!-- <script>
@@ -17,4 +17,5 @@ export default {
 
 <style>
 @import url('./assets/css/layout.css');
+@import url('./assets/css/a.css');
 </style>

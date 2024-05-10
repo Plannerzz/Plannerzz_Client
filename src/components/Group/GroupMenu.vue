@@ -22,7 +22,8 @@ export default {
     methods: {
         //톡방 데이터 불러오기
         async getRoomList() {
-            this.roomList = await this.$api('http://localhost:8000/api/studygroup', 'get')
+            let result = await this.$api('http://localhost:8000/api/studygroup', 'get')
+            this.roomList = result.data
         }
     }
 }

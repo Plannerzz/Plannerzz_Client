@@ -1,5 +1,4 @@
-//GET, DELETE를 위한
-//믹스인 클래스 클래스 생성
+//믹스인 클래스 생성
 
 import axios from "axios";
 
@@ -14,7 +13,7 @@ export default {
                 }).catch((e) => {
                     console.log(e);
                 })
-            ).data;
+            );
         },
     },
 };

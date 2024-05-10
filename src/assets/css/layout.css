@@ -69,7 +69,7 @@ button{cursor:pointer}
 #popup .popwrap{border-radius: 20px; background:#fff; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:286px;}
 #popup .modal-header{position:relative; padding:20px;}
 #popup .modal-header .title{width:calc(100% - 24px); float:left;}
-#popup .modal-header .closeBtn{width:24px; height:24px; display:block; background:url(/img/ico_close.svg) no-repeat center; float:right;}
+#popup .modal-header .closeBtn{width:24px; height:24px; display:block; background:url(../img/ico_close.svg) no-repeat center; float:right;}
 #popup .modal-body{padding:8px; text-align:center;}
 #popup .modal-body p{line-height:1.5;}
 #popup .modal-footer{padding:8px;}

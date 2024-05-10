@@ -1,6 +1,6 @@
 <template>
     <div class="page-wrap">
-        <TopBar />
+        <TopBar v-bind:topTitle="title" />
         <router-view />
         <BottomNav />
     </div>
@@ -14,6 +14,9 @@ export default {
     components: {
         TopBar,
         BottomNav
+    },
+    props: {
+        title: String
     }
 }
 

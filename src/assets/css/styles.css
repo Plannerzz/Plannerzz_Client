@@ -4,7 +4,7 @@
 .myProgress .image{width:60px; height:60px; border-radius:15px; background:#fff; display:inline-block; margin-right:8px;}
 .myProgress .name{color:#fff; display:block; margin-bottom:8px; font-size:20px;}
 .myProgress .message{color:#fff; display:block; color: #D8D8D8;}
-.myProgress .writeBtn{width:36px; height:36px; border:0; border-radius: 50%; background:url(/img/ico_writePlan.svg) no-repeat center, #fff; position:absolute; right:0; top:8px;}
+.myProgress .writeBtn{width:36px; height:36px; border:0; border-radius: 50%; background:url(../img/ico_writePlan.svg) no-repeat center, #fff; position:absolute; right:0; top:8px;}
 .myProgress .progress .title{position:relative; margin-bottom:16px;}
 .myProgress .progress .title h5{color:#fff; font-size:18px;}
 .myProgress .progress .title .percent{color:#fff; font-size:18px; position:absolute; right:0; top:0;}
@@ -37,7 +37,7 @@
 .weeklyPlan .plannerList .text{font-size:16px;}
 .weeklyPlan .plannerList .alignRight{display:block; text-align:right;}
 .weeklyPlan .plannerList span, .weeklyPlan .plannerList em{font-size:12px;}
-.weeklyPlan .plannerList .check{padding-left:26px; position:relative; background:url(/img/ico_check.svg) no-repeat left center; margin-right:24px; display:inline-block;}
+.weeklyPlan .plannerList .check{padding-left:26px; position:relative; background:url(../img/ico_check.svg) no-repeat left center; margin-right:24px; display:inline-block;}
 .weeklyPlan .plannerList .check em{font-style: normal;}
 .weeklyPlan .plannerList .check .done{color:#5F2CF1; font-weight:600;}
 .weeklyPlan .plannerList .per{font-style: normal; color:#000; font-weight:600; font-size:12px; margin-left:12px;}
@@ -54,7 +54,7 @@ button.orangeBtn{background:#FFBB37; color:#fff; width:100%; }
 
 /* 플래너 작성 화면 */
 .writePlanner .input-form{border-radius: 10px; background:#F4F4F4; margin-bottom:10px; padding:12px; position:relative}
-.writePlanner .input-form .reset{width:16px; height:16px; display:block; background:url(/img/ico_reset.svg) no-repeat center; background-size:cover; position:absolute; top:8px; right:12px; text-indent:-9999px;}
+.writePlanner .input-form .reset{width:16px; height:16px; display:block; background:url(../img/ico_reset.svg) no-repeat center; background-size:cover; position:absolute; top:8px; right:12px; text-indent:-9999px;}
 .writePlanner .input-form label{font-size:12px; font-weight:600; color:#666666; margin-bottom:8px; display:block;}
 .writePlanner .input-form span{color:#909090;}
 .writePlanner .input-form em{font-style: normal;}
@@ -63,7 +63,7 @@ button.orangeBtn{background:#FFBB37; color:#fff; width:100%; }
 .writePlanner .input-form input:placeholder{color:#909090;}
 .writePlanner .input-form .ch_list li{position:relative; margin-bottom:8px;}
 .writePlanner .input-form .ch_list .chList{width:calc(100% - 20px); font-weight:400; color:#222; font-size:14px; text-align:left;}
-.writePlanner .input-form .ch_list a{width:16px; height:16px; display:block; background:url(/img/ico_reset.svg) no-repeat center; background-size:cover; position:absolute; top:0px; right:0px; text-indent:-9999px;}
+.writePlanner .input-form .ch_list a{width:16px; height:16px; display:block; background:url(../img/ico_reset.svg) no-repeat center; background-size:cover; position:absolute; top:0px; right:0px; text-indent:-9999px;}
 .writePlanner .addList{color:#fff; background:#5F2CF1; border-radius: 10px; padding:4px 8px; font-size:10px; display:inline-block; position:absolute; top:8px; right:8px;}
 
 /* 플래너 작성 완료 화면 */
@@ -111,11 +111,11 @@ button.orangeBtn{background:#FFBB37; color:#fff; width:100%; }
 .mypageDetail .deTit{position:relative}
 .mypageDetail .deTit span{font-size:12px; color:#fff; background-color: #5F2CF1; border-radius: 35px; padding:8px 16px;}
 .mypageDetail .deTit h6{font-size:18px; color:#000; display:inline-block; vertical-align:top;}
-.mypageDetail .deTit .etc_btn{display:block; width:15px; height:3px; position:absolute; top:8px; right:0; background:url(/img/ico_etc.svg) no-repeat center;}
+.mypageDetail .deTit .etc_btn{display:block; width:15px; height:3px; position:absolute; top:8px; right:0; background:url(../img/ico_etc.svg) no-repeat center;}
 .mypageDetail .img{height:486px; background:#e5e5e5;}
 .mypageDetail .reaction{margin:8px 0;}
-.mypageDetail .reaction span{cursor:pointer; padding-left:30px; background:url(/img/ico_blheart.svg) no-repeat; background-size:24px; background-position:left center;}
-.mypageDetail .reaction span.on{ background:url(/img/ico_pkheart.svg) no-repeat; background-size:24px; background-position:left center;}
+.mypageDetail .reaction span{cursor:pointer; padding-left:30px; background:url(../img/ico_blheart.svg) no-repeat; background-size:24px; background-position:left center;}
+.mypageDetail .reaction span.on{ background:url(../img/ico_pkheart.svg) no-repeat; background-size:24px; background-position:left center;}
 .mypageDetail .content .writer{font-size:14px; font-weight:600; color:#000;}
 .mypageDetail .content .writer span{font-size:14px; color:#747474; font-weight:400; margin-right:4px;}
 .mypageDetail .content .txt{margin:16px 0;}
