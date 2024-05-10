@@ -61,6 +61,7 @@ export default {
                 userpw: ''
             },
             isChecked: false,
+            isSuccess: false,
             pwCheck: '',
             errorText: ''
         }
@@ -104,8 +105,8 @@ export default {
             }
             else {
                 this.errorText = '회원가입이 완료되었습니다!'
+                this.isSuccess = true
                 this.openPop()
-                this.$router.go(-1)
                 return
             }
         },
@@ -128,6 +129,8 @@ export default {
         },
         closePop() {
             $('#popup').hide();
+            if (this.isSuccess)
+                this.$router.go(-1)
         }
     },
 
