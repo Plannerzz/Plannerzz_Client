@@ -41,6 +41,11 @@ const routes = [
                 component: () => import('../components/Home/HomeMenu.vue'),
             },
             {
+                name: "WritePlanner",
+                path: '/plannerz/writeplan',
+                component: () => import('../components/Home/WritePlanner.vue'),
+            },
+            {
                 name: "Group",
                 path: '/plannerz/group',
                 component: () => import('../components/Group/GroupMenu.vue'),
@@ -52,7 +57,7 @@ const routes = [
             },
             {
                 name: 'groupchat',
-                path: '/plannerz/group/chat/:id',
+                path: '/plannerz/group/chat/:roomid',
                 component: () => import('../components/Group/ChatRoom.vue'),
                 props: true
             },
@@ -60,6 +65,12 @@ const routes = [
                 name: 'MyPage',
                 path: '/plannerz/mypage',
                 component: () => import('../components/MyPage/MyPageMenu.vue'),
+                props: true
+            },
+            {
+                name: 'MyPageDetail',
+                path: '/plannerz/mypage/detail',
+                component: () => import('../components/MyPage/MyPageDetail.vue'),
                 props: true
             },
         ]

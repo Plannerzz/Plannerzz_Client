@@ -16,6 +16,7 @@ export default {
 </script> -->
 
 <style>
+@import url('./assets/css/styles.css');
 @import url('./assets/css/layout.css');
 @import url('./assets/css/a.css');
 </style>

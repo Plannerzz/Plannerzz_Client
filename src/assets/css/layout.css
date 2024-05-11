@@ -45,13 +45,13 @@ button{cursor:pointer}
 .container{padding:20px 24px;}
 
 .nav{position:absolute; bottom:0; width:100%; display:flex; flex-wrap:wrap; box-shadow: 0px -5px 20px rgba(0,0,0,.1); padding:0 24px; box-sizing:border-box; padding:20px 0; left:50%; transform:translateX(-50%); background:#fff;}
-.nav > a{width:20%; text-align: center;}
-.nav > a i{display:block; width:24px; height:24px; margin:0 auto 4px auto;}
-.nav > a i.active{display:none}
-.nav > a.on i{display:none}
-.nav > a.on i.active{display:block}
-.nav > a span{font-size:10px; display:block;}
-.nav > a.on span{color:#5f2cf1;}
+.nav > div{width:20%; text-align: center;}
+.nav > div i{display:block; width:24px; height:24px; margin:0 auto 4px auto;}
+.nav > div i.active{display:none}
+.nav > div.on i{display:none}
+.nav > div.on i.active{display:block}
+.nav > div span{font-size:10px; display:block;}
+.nav > div.on span{color:#5f2cf1;}
 
 .tab li{border-top:1px solid #E6E6E6;}
 .tab li{width:1%; display:table-cell; padding:16px 0; text-align:center; cursor:pointer}

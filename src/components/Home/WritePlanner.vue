@@ -1,14 +1,5 @@
 <template>
     <div class="page-wrap">
-        <!-- S : 상단바 -->
-        <div class="top_bar">
-            <a href="main.html" title="뒤로가기" class="left">
-                <img src="./img/ico_leftarrow.svg" alt="왼쪽 화살표 이미지">
-            </a>
-            <h4 class="page_title">플래너 작성</h4>
-        </div>
-        <!-- E : 상단바 -->
-
         <!-- S : 컨텐츠 영역 -->
         <div class="container writePlanner">
             <div class="input-form">
@@ -72,45 +63,6 @@
         </div>
         <!-- E : 컨텐츠 영역 -->
 
-        <!-- S : 하단 메뉴 -->
-        <div class="nav">
-            <a href="#" title="홈" class="on">
-                <i><img src="./img/ico_menu01.svg" alt="홈 아이콘"></i>
-                <i class="active"><img src="./img/ico_menu01_on.svg" alt="홈 아이콘"></i>
-                <span>HOME</span>
-            </a>
-            <a href="#" title="그룹">
-                <i><img src="./img/ico_menu02.svg" alt="그룹 아이콘"></i>
-                <i class="active"><img src="./img/ico_menu02_on.svg" alt="그룹 아이콘"></i>
-                <span>그룹</span>
-            </a>
-            <a href="#" title="소셜">
-                <i><img src="./img/ico_menu03.svg" alt="소셜 아이콘"></i>
-                <i class="active"><img src="./img/ico_menu03_onsvg" alt="소셜 아이콘"></i>
-                <span>소셜</span>
-            </a>
-            <a href="#" title="커뮤니티">
-                <i><img src="./img/ico_menu04.svg" alt="커뮤니티 아이콘"></i>
-                <i class="active"><img src="./img/ico_menu04_on.svg" alt="커뮤니티 아이콘"></i>
-                <span>커뮤니티</span>
-            </a>
-            <a href="#" title="마이페이지">
-                <i><img src="./img/ico_menu05.svg" alt="마이페이지 아이콘"></i>
-                <i class="active"><img src="./img/ico_menu05_on.svg" alt="마이페이지 아이콘"></i>
-                <span>마이페이지</span>
-            </a>
-        </div>
-        <!-- E : 하단 메뉴 -->
-
-    </div>
-    <div class="popup">
-        <div class="modal-header"></div>
-        <div class="modal-body"></div>
-        <div class="modal-footer">
-            <div class="buttons">
-
-            </div>
-        </div>
     </div>
 </template>
 
