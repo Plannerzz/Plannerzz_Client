@@ -2,7 +2,7 @@
     <div class="page-wrap">
         <TopBar v-bind:topTitle="title" />
         <router-view />
-        <BottomNav />
+        <BottomNav :dataList="activeData" @input="updateData" />
     </div>
 </template>
 
@@ -15,13 +15,28 @@ export default {
         TopBar,
         BottomNav
     },
-    props: {
-        title: String
-    }
+    data() {
+        return {
+            title: '',
+            activeData: {
+                homeActive: '',
+                groupActive: '',
+                socialActive: '',
+                communityActive: '',
+                myPageActive: '',
+            }
+        }
+    },
+    methods: {
+        updateData(title) {
+            this.title = title
+        }
+    },
 }
 
 </script>
 
 <style>
 @import url('../assets/css/layout.css');
+@import url('../assets/css/styles.css');
 </style>

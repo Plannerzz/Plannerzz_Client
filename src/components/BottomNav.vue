@@ -1,30 +1,30 @@
 <template>
     <div class="nav">
-        <router-link to="/plannerz/home" replace title="홈" v-on:click="checkHome()" v-bind:class="homeActive">
+        <div v-on:click="checkHome()" title="홈" v-bind:class="homeActive">
             <i><img src="../assets/img/ico_menu01.svg" alt="홈 아이콘"></i>
             <i class="active"><img src="../assets/img/ico_menu01_on.svg" alt="홈 아이콘"></i>
             <span>HOME</span>
-        </router-link>
-        <router-link to="/plannerz/group" replace title="그룹" v-on:click="checkGroup()" v-bind:class="groupActive">
+        </div>
+        <div v-on:click="checkGroup()" title="그룹" v-bind:class="groupActive">
             <i><img src="../assets/img/ico_menu02.svg" alt="그룹 아이콘"></i>
             <i class="active"><img src="../assets/img/ico_menu02_on.svg" alt="그룹 아이콘"></i>
             <span>그룹</span>
-        </router-link>
-        <router-link to="#" replace title="소셜" v-on:click="checkSocial()" v-bind:class="socialActive">
+        </div>
+        <div v-on:click="checkSocial()" title="소셜" v-bind:class="socialActive">
             <i><img src="../assets/img/ico_menu03.svg" alt="소셜 아이콘"></i>
             <i class="active"><img src="../assets/img/ico_menu03_on.svg" alt="소셜 아이콘"></i>
             <span>소셜</span>
-        </router-link>
-        <router-link to="#" replace title="커뮤니티" v-on:click="checkCommunity()" v-bind:class="communityActive">
+        </div>
+        <div v-on:click="checkCommunity()" title="커뮤니티" v-bind:class="communityActive">
             <i><img src="../assets/img/ico_menu04.svg" alt="커뮤니티 아이콘"></i>
             <i class="active"><img src="../assets/img/ico_menu04_on.svg" alt="커뮤니티 아이콘"></i>
             <span>커뮤니티</span>
-        </router-link>
-        <router-link to="/plannerz/mypage" replace title="마이페이지" v-on:click="checkMyPage()" v-bind:class="myPageActive">
+        </div>
+        <div v-on:click="checkMyPage()" title="마이페이지" v-bind:class="myPageActive">
             <i><img src="../assets/img/ico_menu05.svg" alt="마이페이지 아이콘"></i>
             <i class="active"><img src="../assets/img/ico_menu05_on.svg" alt="마이페이지 아이콘"></i>
             <span>마이페이지</span>
-        </router-link>
+        </div>
     </div>
 </template>
 
@@ -32,7 +32,7 @@
 export default {
     data() {
         return {
-            homeActive: 'on',
+            homeActive: '',
             groupActive: '',
             socialActive: '',
             communityActive: '',
@@ -46,6 +46,8 @@ export default {
             this.socialActive = ''
             this.communityActive = ''
             this.myPageActive = ''
+            this.$router.replace('/plannerz/home')
+            this.$emit('input', '홈')
         },
         checkGroup() {
             this.homeActive = ''
@@ -53,6 +55,8 @@ export default {
             this.socialActive = ''
             this.communityActive = ''
             this.myPageActive = ''
+            this.$router.replace('/plannerz/group')
+            this.$emit('input', '그룹')
         },
         checkSocial() {
             this.homeActive = ''
@@ -60,6 +64,7 @@ export default {
             this.socialActive = 'on'
             this.communityActive = ''
             this.myPageActive = ''
+            this.$emit('input', '친구')
         },
         checkCommunity() {
             this.homeActive = ''
@@ -67,6 +72,7 @@ export default {
             this.socialActive = ''
             this.communityActive = 'on'
             this.myPageActive = ''
+            this.$emit('input', '커뮤니티')
         },
         checkMyPage() {
             this.homeActive = ''
@@ -74,6 +80,8 @@ export default {
             this.socialActive = ''
             this.communityActive = ''
             this.myPageActive = 'on'
+            this.$router.replace('/plannerz/mypage')
+            this.$emit('input', '마이페이지')
         }
     }
 }

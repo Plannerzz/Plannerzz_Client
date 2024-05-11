@@ -64,7 +64,8 @@ export default {
                 return
             }
             else {
-                localStorage.setItem("userid", resultData.id);
+                this.$store.commit('setUserId', resultData.id)
+                this.$store.commit('setUserName', resultData.name)
                 this.$router.push('/plannerz/home')
             }
         },
